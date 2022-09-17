@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E288D9AA-C4E4-421F-8F42-FAF156FD6B0E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Jogo_Pesca</RootNamespace>
+    <AssemblyName>Jogo_Pesca</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Correcao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Correcao.Designer.cs">
+      <DependentUpon>Correcao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPontuacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPontuacao.Designer.cs">
+      <DependentUpon>FrmPontuacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRanking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRanking.Designer.cs">
+      <DependentUpon>frmRanking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Creditos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Creditos.Designer.cs">
+      <DependentUpon>frm_Creditos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_dialogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_dialogo.Designer.cs">
+      <DependentUpon>frm_dialogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Loading.Designer.cs">
+      <DependentUpon>frm_Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Nome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Nome.Designer.cs">
+      <DependentUpon>frm_Nome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_TelaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_TelaInicial.Designer.cs">
+      <DependentUpon>frm_TelaInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Principal.Designer.cs">
+      <DependentUpon>frm_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jogador.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Correcao.resx">
+      <DependentUpon>Correcao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPontuacao.resx">
+      <DependentUpon>FrmPontuacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRanking.resx">
+      <DependentUpon>frmRanking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Creditos.resx">
+      <DependentUpon>frm_Creditos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_dialogo.resx">
+      <DependentUpon>frm_dialogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Loading.resx">
+      <DependentUpon>frm_Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Nome.resx">
+      <DependentUpon>frm_Nome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_TelaInicial.resx">
+      <DependentUpon>frm_TelaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Principal.resx">
+      <DependentUpon>frm_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mar novo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 10-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inicial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inicial %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 141.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 6 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 14 %28Panel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TESTE1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FISH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2020-11-18 at 21.33.20 %284%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2020-11-18 at 21.33.20 %283%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FISH1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FISH2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FISH3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FISH4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FISH5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FISH6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FISH7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2020-11-20 at 14.26.55.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jovem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barco %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1603847.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BaseDados1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pontuacao.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4175396.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4202419.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4206901.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41753961.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\42024191.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\42069011.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\785.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4128685.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4220362.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4209245.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FISH6_1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
